@@ -87,3 +87,18 @@ section h2 {
   font-size: 1.1rem;
   color: #333;
 }
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header img {
+    margin-bottom: 1rem;
+  }
+
+  .header-info p {
+    font-size: 0.95rem;
+  }
+}
