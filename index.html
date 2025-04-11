@@ -14,6 +14,7 @@
       position: relative;
     }
 
+    /* Blurry background image */
     body::before {
       content: "";
       position: fixed;
@@ -21,8 +22,11 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: url('IMG_2531.JPG') no-repeat center center/cover;
-      opacity: 0.05;
+      background-image: url('IMG_2531.JPG');
+      background-position: center;
+      background-size: cover;
+      filter: blur(8px);
+      opacity: 0.2;
       z-index: -1;
     }
 
@@ -93,7 +97,6 @@
 <body>
 
   <div class="container">
-    <!-- Header section -->
     <div class="header">
       <img src="IMG_1228.jpg" alt="Elliotte Wideman" />
       <div class="header-info">
@@ -106,7 +109,6 @@
       </div>
     </div>
 
-    <!-- Content starts -->
     <h2>Summary</h2>
     <p>
       Graduate student in Software Engineering with hands-on experience in XR development, backend systems, and multimedia production. Strong in Java, Unity, Firebase, and web technologies. Passionate about building scalable, user-focused applications and contributing to innovative tech teams.
