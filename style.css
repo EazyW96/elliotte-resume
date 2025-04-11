@@ -60,22 +60,28 @@ html, body {
   gap: 0.8rem;
 }
 
-.header-right a svg {
-  width: 24px;
-  height: 24px;
-  fill: #444;
-  transition: transform 0.3s ease, fill 0.3s ease;
+/* ✅ ICON COLORS */
+.header-right a[title="LinkedIn"] svg {
+  fill: #0077B5; /* LinkedIn brand color */
+}
+.header-right a[title="Twitter"] svg {
+  fill: #1DA1F2; /* Twitter brand color */
+}
+.header-right a[title="TikTok"] svg {
+  fill: #010101; /* TikTok brand color */
 }
 
 .header-right a:hover svg {
   transform: scale(1.2);
+  transition: transform 0.3s ease, fill 0.3s ease;
 }
 
+/* ✅ ICON HOVER COLORS */
 .header-right a[title="LinkedIn"]:hover svg {
   fill: #0A66C2;
 }
 .header-right a[title="Twitter"]:hover svg {
-  fill: #1DA1F2;
+  fill: #0d8ddb;
 }
 .header-right a[title="TikTok"]:hover svg {
   fill: #ff0050;
