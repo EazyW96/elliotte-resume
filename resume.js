@@ -2,7 +2,7 @@ document.getElementById("resume-content").innerHTML = `
   <section>
     <h2>Summary</h2>
     <p>
-      Aspiring software engineer and current graduate student in Software Engineering with hands-on experience through academic projects and a Graduate Research Assistantship focused on XR (Extended Reality) development. Comfortable working with Java, Python, JavaScript, and Unity for building interactive applications and immersive environments. Eager to learn and contribute to innovative technologies, with growing skills in backend systems, user experience design, and mobile/web development. Passionate about creating impactful solutions and excited to bring creativity, curiosity, and dedication to a collaborative engineering team at Apple.
+      Aspiring software engineer and current graduate student in Software Engineering with hands-on experience through academic projects and a Graduate Research Assistantship focused on XR (Extended Reality) development. Comfortable working with Java, Python, JavaScript, and Unity for building interactive applications and immersive environments. Eager to learn and contribute to innovative technologies, with growing skills in backend systems, user experience design, and mobile/web development. Passionate about creating impactful solutions and excited to bring creativity, curiosity, and dedication to a collaborative engineering team.
     </p>
   </section>
 
