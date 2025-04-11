@@ -101,4 +101,52 @@ document.getElementById("resume-content").innerHTML = `
     <h2>References</h2>
     <p>Available upon request.</p>
   </section>
+
+  <section id="requirements-engineering">
+    <h2>Requirements Engineering</h2>
+    <div class="video-list" id="requirements-videos"></div>
+  </section>
+  <section id="xr-projects">
+    <h2>XR Projects</h2>
+    <div class="video-list" id="xr-videos"></div>
+  </section>
+  <section id="media-work">
+    <h2>Media Work</h2>
+    <div class="video-list" id="media-videos"></div>
+  </section>
 `;
+
+const videos = [
+  {
+    title: "UBID Online Auction System",
+    category: "requirements",
+    url: "https://www.youtube.com/embed/-ZaHCMiuxE0"
+  },
+  {
+    title: "Requirements Validation",
+    category: "requirements",
+    url: "https://www.youtube.com/embed/IetucvQaaLs"
+  },
+  {
+    title: "Requirements Elicitation",
+    category: "requirements",
+    url: "https://www.youtube.com/embed/ytfXdI5lkU8"
+  }
+];
+
+function loadVideos() {
+  videos.forEach(video => {
+    const container = document.getElementById(`${video.category}-videos`);
+    if (container) {
+      const card = document.createElement("div");
+      card.className = "video-card";
+      card.innerHTML = `
+        <h3>${video.title}</h3>
+        <iframe src="${video.url}" frameborder="0" allowfullscreen></iframe>
+      `;
+      container.appendChild(card);
+    }
+  });
+}
+
+document.addEventListener("DOMContentLoaded", loadVideos);
