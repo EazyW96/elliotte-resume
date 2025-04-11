@@ -101,19 +101,6 @@ document.getElementById("resume-content").innerHTML = `
     <h2>References</h2>
     <p>Available upon request.</p>
   </section>
-
-  <section id="requirements-engineering">
-    <h2>Requirements Engineering</h2>
-    <div class="video-list" id="requirements-videos"></div>
-  </section>
-  <section id="xr-projects">
-    <h2>XR Projects</h2>
-    <div class="video-list" id="xr-videos"></div>
-  </section>
-  <section id="media-work">
-    <h2>Media Work</h2>
-    <div class="video-list" id="media-videos"></div>
-  </section>
 `;
 
 
