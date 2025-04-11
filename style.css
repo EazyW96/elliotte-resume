@@ -1,4 +1,4 @@
-/* GENERAL RESET + BACKGROUND */
+/* GLOBAL RESET & BACKGROUND */
 html, body {
   height: 100%;
   margin: 0;
@@ -11,7 +11,7 @@ html, body {
   line-height: 1.6;
 }
 
-/* CONTAINER */
+/* MAIN CONTAINER */
 .container {
   max-width: 900px;
   margin: 2rem auto;
@@ -81,7 +81,22 @@ html, body {
   fill: #ff0050;
 }
 
-/* PROJECT VIDEO SLIDES */
+/* SECTION STYLING */
+section {
+  margin-bottom: 3rem;
+}
+
+section h2 {
+  color: #2c3e50;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+.project-info p {
+  margin: 0.3rem 0;
+}
+
+/* SLIDESHOW VIDEO CONTAINER */
 .slideshow-container {
   position: relative;
   width: 100%;
@@ -131,7 +146,7 @@ html, body {
   margin-top: 2rem;
 }
 
-/* RESPONSIVE FIXES */
+/* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
