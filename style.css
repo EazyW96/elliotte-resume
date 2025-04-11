@@ -17,8 +17,8 @@ body::before {
   background-image: url('IMG_2531.JPG');
   background-position: center;
   background-size: cover;
-  filter: blur(8px);
-  opacity: 0.7;
+  filter: blur(4px);
+  opacity: 0.4;
   z-index: -1;
 }
 
