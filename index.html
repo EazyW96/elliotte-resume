@@ -6,7 +6,9 @@
   <meta name="description" content="Elliotte Wideman Resume – Software Engineer specializing in XR and multimedia development." />
   <title>Elliotte Wideman | Resume</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- ✅ Font Awesome (CDN version that always works) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-sVj2gCW3RNN+8wX+9ew0X7+E4QmJtLuNRd3rFg0uORR1oFEEdmvkAyoJtXPCRld9grLMK2uZXfEpQ6bfMJ7j1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <main class="container">
@@ -15,19 +17,23 @@
       <div class="header-info">
         <h1>Elliotte Wideman</h1>
         <p>Atlanta, GA | <a href="mailto:ciaontop@gmail.com">ciaontop@gmail.com</a> | 404-528-9524</p>
+
+        <!-- ✅ Social Icons (displayed using Font Awesome) -->
         <div class="social-icons">
           <a href="mailto:ciaontop@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-          <a href="https://linkedin.com/in/elliottewideman007" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/KECB24" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/elliottewideman007" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/KECB24" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
         </div>
       </div>
     </header>
 
+    <!-- Resume Content Loads from resume.js -->
     <div id="resume-content">
       <p>Loading resume...</p>
     </div>
   </main>
 
+  <!-- JavaScript Resume Content -->
   <script src="resume.js"></script>
 </body>
 </html>
