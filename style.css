@@ -1,12 +1,15 @@
-/* Global */
 html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background: url('IMG_2531.JPG') no-repeat center center/cover;
-  background-attachment: scroll;
-  background-color: #f4f4f4;
   line-height: 1.6;
+  background-color: #f4f4f4;
+  background-image: url('IMG_2531.JPG');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: scroll;
   overflow-x: hidden;
 }
 
@@ -14,144 +17,115 @@ html, body {
   max-width: 900px;
   margin: 2rem auto;
   padding: 2rem;
-  background: rgba(255, 255, 255, 0.97);
-  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.95);
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
 }
 
-/* Header */
-.header {
+.site-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 1rem;
+  padding: 1rem 2rem;
+  background: rgba(255,255,255,0.9);
   border-bottom: 1px solid #ccc;
 }
 
-.header img {
+.header-left img {
   width: 100px;
   height: 100px;
   object-fit: cover;
   border-radius: 50%;
+  box-shadow: 0 0 6px rgba(0,0,0,0.15);
 }
 
-.header-info {
-  flex-grow: 1;
-  padding-left: 1rem;
-}
-
-.header-info h1 {
+.header-middle h1 {
   margin: 0;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: #2c3e50;
 }
 
-.header-info p {
+.header-middle p {
   margin: 0.3rem 0;
+  font-size: 0.95rem;
 }
 
-/* Social Icons */
-.social-icons {
+.header-right {
   display: flex;
-  gap: 12px;
+  gap: 10px;
 }
 
-.social-icons svg {
+.header-right svg {
   width: 24px;
   height: 24px;
-  fill: #333;
   transition: transform 0.2s ease, fill 0.2s ease;
+  fill: #444;
 }
 
-.social-icons a:hover svg {
+.header-right a:hover svg {
   transform: scale(1.2);
 }
 
-.social-icons a[title="LinkedIn"]:hover svg { fill: #0A66C2; }
-.social-icons a[title="Twitter"]:hover svg { fill: #1DA1F2; }
-.social-icons a[title="TikTok"]:hover svg { fill: #ff0050; }
+.header-right a[title="LinkedIn"]:hover svg {
+  fill: #0A66C2;
+}
 
-/* Section Layout */
-section {
-  margin-bottom: 3rem;
+.header-right a[title="Twitter"]:hover svg {
+  fill: #1DA1F2;
+}
+
+.header-right a[title="TikTok"]:hover svg {
+  fill: #ff0050;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+  background: rgba(255,255,255,0.9);
+  border-top: 1px solid #ccc;
+  margin-top: 3rem;
 }
 
 section h2 {
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 0.3rem;
   color: #2c3e50;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
 }
 
-/* Grid for Projects */
 .project-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-top: 1rem;
+  margin-bottom: 3rem;
 }
 
-.project-info p {
-  margin-bottom: 0.5rem;
+.project-info {
+  margin-bottom: 1rem;
 }
 
 .project-video iframe {
   width: 100%;
   height: 315px;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Slideshow Styles */
-.video-carousel {
-  position: relative;
-  margin-top: 1rem;
-}
-
-.reqSlides iframe {
-  width: 100%;
-  height: 315px;
-  border-radius: 8px;
-}
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  background-color: #333;
-  color: white;
-  font-size: 20px;
-  padding: 8px;
-  border: none;
-  border-radius: 4px;
-  transform: translateY(-50%);
-}
-
-.prev { left: 0; }
-.next { right: 0; }
-
-/* Footer */
-.footer {
-  text-align: center;
-  padding: 1rem;
-  background: rgba(255, 255, 255, 0.9);
-  border-top: 1px solid #ccc;
-  font-size: 0.9rem;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-  .header {
+@media (max-width: 768px) {
+  .site-header {
     flex-direction: column;
-    text-align: center;
+    align-items: flex-start;
+    gap: 1rem;
   }
 
-  .header-info {
-    padding-left: 0;
+  .header-left img {
+    width: 80px;
+    height: 80px;
   }
 
-  .social-icons {
-    justify-content: center;
-    margin-top: 1rem;
+  .header-middle, .header-right {
+    align-self: stretch;
+  }
+
+  .header-right {
+    justify-content: flex-start;
   }
 }
