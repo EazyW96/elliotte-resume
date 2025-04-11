@@ -4,20 +4,10 @@ html, body {
   padding: 0;
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #f4f4f4;
-  position: relative;
-  overflow-x: hidden;
-}
-
-/* 🔥 Scrollable and subtle background image */
-body::before {
-  content: "";
-  position: absolute;
-  inset: 0;
   background: url('IMG_2531.JPG') no-repeat center center/cover;
-  opacity: 0.4;
-  z-index: -1;
-  pointer-events: none;
+  background-color: #f4f4f4;
+  background-attachment: scroll; /* makes it scroll with page */
+  overflow-x: hidden;
 }
 
 .container {
