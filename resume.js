@@ -148,5 +148,4 @@ function loadVideos() {
     }
   });
 }
-
 document.addEventListener("DOMContentLoaded", loadVideos);
