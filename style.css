@@ -1,8 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
   margin: 0;
-  padding: 0;
   background-color: #f4f4f4;
   position: relative;
 }
@@ -17,8 +15,8 @@ body::before {
   background-image: url('IMG_2531.JPG');
   background-position: center;
   background-size: cover;
-  filter: blur(4px);
-  opacity: 0.4;
+  filter: blur(6px);
+  opacity: 0.3;
   z-index: -1;
 }
 
@@ -26,7 +24,7 @@ body::before {
   max-width: 900px;
   margin: 2rem auto;
   padding: 2rem;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.97);
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
@@ -40,47 +38,32 @@ body::before {
 .header img {
   width: 120px;
   height: 120px;
-  object-fit: cover;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.header-info {
-  flex: 1;
+  object-fit: cover;
 }
 
 .header-info h1 {
   margin: 0;
-  color: #2c3e50;
+  font-size: 1.8rem;
 }
 
-.header-info p {
-  margin: 0.3rem 0;
+.social-icons a {
+  margin-right: 10px;
+  font-size: 1.5rem;
+  color: #333;
 }
 
-h2 {
+section {
+  margin-bottom: 2rem;
+}
+
+section h2 {
   color: #2c3e50;
   border-bottom: 1px solid #ccc;
-  padding-bottom: 0.2rem;
-  margin-top: 2rem;
+  padding-bottom: 0.25rem;
 }
 
-ul {
-  padding-left: 1.2rem;
-}
-
-.project-title {
-  font-weight: bold;
+h3 {
   margin-top: 1rem;
-}
-
-@media (max-width: 600px) {
-  .header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .header img {
-    margin-bottom: 1rem;
-  }
+  color: #444;
 }
