@@ -6,18 +6,22 @@ html, body {
   line-height: 1.6;
   background-color: #f4f4f4;
   position: relative;
+  overflow-x: hidden;
 }
 
-/* Scrollable Background Image */
+/* 🔥 Scrollable and subtle background image */
 body::before {
   content: "";
-  position: absolute; /* Changed from fixed to absolute */
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('IMG_2531.JPG') no-repeat center center/cover;
-  opacity: 0.05;
+  background-image: url('IMG_2531.JPG'); /* <-- Make sure this file is present and named exactly */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.08; /* Soft visibility */
   z-index: -1;
 }
 
