@@ -4,95 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Elliotte Wideman | Resume</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      position: relative;
-    }
-
-    /* Blurry background image */
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: url('IMG_2531.JPG');
-      background-position: center;
-      background-size: cover;
-      filter: blur(8px);
-      opacity: 0.2;
-      z-index: -1;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 2rem;
-      background: rgba(255, 255, 255, 0.95);
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    .header {
-      display: flex;
-      align-items: center;
-      gap: 1.5rem;
-      margin-bottom: 2rem;
-    }
-
-    .header img {
-      width: 120px;
-      height: 120px;
-      object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    .header-info {
-      flex: 1;
-    }
-
-    .header-info h1 {
-      margin: 0;
-      color: #2c3e50;
-    }
-
-    .header-info p {
-      margin: 0.3rem 0;
-    }
-
-    h2 {
-      color: #2c3e50;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 0.2rem;
-      margin-top: 2rem;
-    }
-
-    ul {
-      padding-left: 1.2rem;
-    }
-
-    .project-title {
-      font-weight: bold;
-      margin-top: 1rem;
-    }
-
-    @media (max-width: 600px) {
-      .header {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .header img {
-        margin-bottom: 1rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -110,9 +22,7 @@
     </div>
 
     <h2>Summary</h2>
-    <p>
-      Graduate student in Software Engineering with hands-on experience in XR development, backend systems, and multimedia production. Strong in Java, Unity, Firebase, and web technologies. Passionate about building scalable, user-focused applications and contributing to innovative tech teams.
-    </p>
+    <p>Graduate student in Software Engineering with hands-on experience in XR development, backend systems, and multimedia production...</p>
 
     <h2>Education</h2>
     <ul>
@@ -123,17 +33,8 @@
 
     <h2>Experience</h2>
     <ul>
-      <li><strong>Graduate Research Assistant</strong>, KSU (2024–Present)
-        <ul>
-          <li>Created XR educational materials and Unity simulations</li>
-          <li>Researched AR/VR development and immersive learning tools</li>
-        </ul>
-      </li>
-      <li><strong>Media Production Specialist</strong>, EWC (2022–Present)
-        <ul>
-          <li>Produced multimedia assets and branding for clients</li>
-        </ul>
-      </li>
+      <li><strong>Graduate Research Assistant</strong>, KSU (2024–Present)</li>
+      <li><strong>Media Production Specialist</strong>, EWC (2022–Present)</li>
       <li><strong>Studio Manager / Audio Engineer</strong>, StreamCut Media (2021–2022)</li>
       <li><strong>Audio Intern</strong>, The Omen Agency (2017)</li>
     </ul>
@@ -141,26 +42,23 @@
     <h2>Projects</h2>
     <p class="project-title">Georgia Symphony Orchestra Website</p>
     <ul>
-      <li>Developed a unified website using WordPress for navigation and branding</li>
-      <li>Implemented calendar filters and landing pages to simulate advanced functionality</li>
+      <li>Developed a WordPress website with calendar filters and landing pages</li>
     </ul>
 
     <p class="project-title">UBID Online Auction System</p>
     <ul>
-      <li>Team-built eBay-like auction app with item listings, bidding, and user auth</li>
+      <li>Built an auction app with bidding and authentication</li>
     </ul>
 
     <p class="project-title">HR Event Calendar</p>
     <ul>
-      <li>Created a secure calendar system for internal HR use with real-time updates</li>
+      <li>Secure Firebase calendar system with real-time updates</li>
     </ul>
 
     <h2>Skills</h2>
     <ul>
       <li>Languages: Java, Python, JavaScript, C#</li>
       <li>Tools: Unity, Firebase, Git, Adobe Suite</li>
-      <li>Frameworks: WordPress, Firebase Auth</li>
-      <li>XR: Unity VR/AR, 3D Modeling</li>
     </ul>
 
     <h2>Certifications</h2>
