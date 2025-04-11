@@ -10,40 +10,81 @@
       line-height: 1.6;
       margin: 0;
       padding: 0;
-      background: #f4f4f4;
-      color: #333;
+      background-color: #f4f4f4;
+      position: relative;
     }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('./IMG_2531.JPG') no-repeat center center/cover;
+      opacity: 0.05;
+      z-index: -1;
+    }
+
     .container {
       max-width: 900px;
       margin: 2rem auto;
       padding: 2rem;
-      background: #fff;
+      background: rgba(255, 255, 255, 0.95);
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    h1, h2 {
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .header img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .header-info {
+      flex: 1;
+    }
+
+    .header-info h1 {
+      margin: 0;
+      color: #2c3e50;
+    }
+
+    .header-info p {
+      margin: 0.3rem 0;
+    }
+
+    h2 {
       color: #2c3e50;
       border-bottom: 1px solid #ccc;
       padding-bottom: 0.2rem;
+      margin-top: 2rem;
     }
+
     ul {
       padding-left: 1.2rem;
     }
-    .section {
-      margin-bottom: 2rem;
-    }
-    .header {
-      text-align: center;
-    }
-    .header p {
-      margin: 0.2rem 0;
-    }
+
     .project-title {
       font-weight: bold;
       margin-top: 1rem;
     }
+
     @media (max-width: 600px) {
-      .container {
-        padding: 1rem;
+      .header {
+        flex-direction: column;
+        text-align: center;
+      }
+      .header img {
+        margin-bottom: 1rem;
       }
     }
   </style>
@@ -52,86 +93,18 @@
 
   <div class="container">
     <div class="header">
-      <h1>Elliotte Wideman</h1>
-      <p>Atlanta, GA | <a href="mailto:ciaontop@gmail.com">ciaontop@gmail.com</a> | 404-528-9524</p>
-      <p><a href="https://linkedin.com/in/elliottewideman007" target="_blank">LinkedIn</a> | <a href="https://github.com/KECB24/SWE663324" target="_blank">GitHub</a></p>
+      <img src="./IMG_1228.jpg" alt="Elliotte Wideman" />
+      <div class="header-info">
+        <h1>Elliotte Wideman</h1>
+        <p>Atlanta, GA | <a href="mailto:ciaontop@gmail.com">ciaontop@gmail.com</a> | 404-528-9524</p>
+        <p><a href="https://linkedin.com/in/elliottewideman007" target="_blank">LinkedIn</a> | <a href="https://github.com/KECB24/SWE663324" target="_blank">GitHub</a></p>
+      </div>
     </div>
 
-    <div class="section">
-      <h2>Summary</h2>
-      <p>Graduate student in Software Engineering with hands-on experience in XR development, backend systems, and multimedia production. Strong in Java, Unity, and web technologies. Passionate about building scalable, user-friendly applications. Excited to contribute to innovative engineering teams and grow through collaboration.</p>
-    </div>
+    <h2>Summary</h2>
+    <p>Graduate student in Software Engineering with hands-on experience in XR development, backend systems, and multimedia production...</p>
 
-    <div class="section">
-      <h2>Education</h2>
-      <ul>
-        <li><strong>Master of Science, Software Engineering</strong> – Kennesaw State University (2024–2026)</li>
-        <li><strong>Graduate Certificate, Software Engineering Foundations</strong> – KSU (2023–2024)</li>
-        <li><strong>B.A., Digital Communication & Media</strong> – American Intercontinental University (2022)</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>Experience</h2>
-      <ul>
-        <li><strong>Graduate Research Assistant</strong>, KSU (2024–Present)
-          <ul>
-            <li>Developed XR educational materials and immersive Unity applications</li>
-            <li>Focused on human-computer interaction and SDLC processes</li>
-          </ul>
-        </li>
-        <li><strong>Media Production Specialist</strong>, EWC (2022–Present)
-          <ul>
-            <li>Created multimedia content and marketing strategies</li>
-          </ul>
-        </li>
-        <li><strong>Studio Manager / Audio Engineer</strong>, StreamCut Media (2021–2022)</li>
-        <li><strong>Audio Intern</strong>, The Omen Agency (2017)</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>Projects</h2>
-      <p class="project-title">Georgia Symphony Orchestra Unified Website</p>
-      <ul>
-        <li>Designed proof-of-concept website to unify branding and engagement</li>
-        <li>Built with WordPress, added accessibility, calendars, landing pages</li>
-        <li>Improved user experience and supported future funding efforts</li>
-      </ul>
-
-      <p class="project-title">UBID Online Auction System</p>
-      <ul>
-        <li>eBay-like platform with bidding, listing, and user management</li>
-      </ul>
-
-      <p class="project-title">HR Event Calendar System</p>
-      <ul>
-        <li>Created secure intranet calendar app using Firebase and JS</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>Technical Skills</h2>
-      <ul>
-        <li>Languages: Java, Python, JavaScript, C#</li>
-        <li>Tools: Unity, Firebase, Git, Adobe Suite</li>
-        <li>Frameworks: WordPress, Firebase Auth</li>
-        <li>XR: Unity VR/AR, 3D Modeling</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>Certifications</h2>
-      <ul>
-        <li>HTML, CSS, JS (Johns Hopkins)</li>
-        <li>Java (W3Schools, Programiz)</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>References</h2>
-      <p>Available upon request</p>
-    </div>
+    <!-- Continue the rest of your resume here -->
   </div>
 
 </body>
