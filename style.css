@@ -13,16 +13,11 @@ html, body {
 body::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('IMG_2531.JPG'); /* <-- Make sure this file is present and named exactly */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  opacity: 0.08; /* Soft visibility */
+  inset: 0;
+  background: url('IMG_2531.JPG') no-repeat center center/cover;
+  opacity: 0.1;
   z-index: -1;
+  pointer-events: none;
 }
 
 .container {
