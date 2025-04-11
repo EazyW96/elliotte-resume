@@ -26,6 +26,7 @@ body::before {
   padding: 2rem;
   background: rgba(255, 255, 255, 0.97);
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
 }
 
 .header {
@@ -38,19 +39,31 @@ body::before {
 .header img {
   width: 120px;
   height: 120px;
-  border-radius: 10px;
   object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.15);
 }
 
 .header-info h1 {
   margin: 0;
-  font-size: 1.8rem;
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+.social-icons {
+  margin-top: 0.5rem;
 }
 
 .social-icons a {
-  margin-right: 10px;
+  margin-right: 12px;
   font-size: 1.5rem;
   color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #0077b5; /* LinkedIn blue */
 }
 
 section {
@@ -61,19 +74,8 @@ section h2 {
   color: #2c3e50;
   border-bottom: 1px solid #ccc;
   padding-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
 }
-.social-icons a {
-  margin-right: 12px;
-  font-size: 1.5rem;
-  color: #333;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-  color: #0077b5; /* LinkedIn Blue on Hover */
-}
-
 
 h3 {
   margin-top: 1rem;
