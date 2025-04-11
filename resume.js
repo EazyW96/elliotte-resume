@@ -1,6 +1,3 @@
-// Injects the main resume sections (not including project videos) into the page
-// Each section includes headers and descriptions for easy understanding
-
 document.getElementById("resume-content").innerHTML = `
   <section>
     <h2>Summary</h2>
@@ -58,17 +55,6 @@ document.getElementById("resume-content").innerHTML = `
 
   <section>
     <h2>Projects</h2>
-    <h3>Georgia Symphony Orchestra Unified Website (Capstone Project) — 2025</h3>
-    <ul>
-      <li><strong>Course:</strong> SWE 7903 – Software Engineering Capstone</li>
-      <li><strong>Semester:</strong> Fall 2024</li>
-      <li><strong>Prerequisites:</strong> SWE 6613 and SWE 6633</li>
-      <li><strong>Concurrent Course:</strong> SWE 6673</li>
-      <li style="color: red;">
-        Designed and developed a proof-of-concept unified website for the Georgia Symphony Orchestra (GSO), streamlining navigation, branding, and user engagement. Integrated accessibility features, centralized event listings, and multimedia content to enhance inclusivity and audience reach. Leveraged WordPress for content management and implemented filterable calendars and campaign-specific landing pages to simulate advanced web functionality. The project demonstrated real-world impact by addressing branding and operational challenges, creating a scalable solution to improve user experience, foster community connections, and attract diversified funding opportunities.
-      </li>
-    </ul>
-
     <h3>UBID Online Auction System — 2024</h3>
     <ul>
       <li>Developed UBID, an online auction system designed to transition traditional on-site auctions to an internet-based platform similar to eBay.</li>
