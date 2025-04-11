@@ -1,71 +1,66 @@
+/* Global */
 html, body {
-  height: 100%;
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  line-height: 1.6;
   background: url('IMG_2531.JPG') no-repeat center center/cover;
-  background-color: #f4f4f4;
   background-attachment: scroll;
+  background-color: #f4f4f4;
+  line-height: 1.6;
   overflow-x: hidden;
 }
 
-/* Container for the resume body */
 .container {
   max-width: 900px;
   margin: 2rem auto;
   padding: 2rem;
   background: rgba(255, 255, 255, 0.97);
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
   border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* Header layout: image left, contact middle, socials right */
-.site-header {
+/* Header */
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  background-color: #ffffffd9;
-  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1rem;
   border-bottom: 1px solid #ccc;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
-.logo-area img {
+.header img {
   width: 100px;
   height: 100px;
-  border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 0 6px rgba(0,0,0,0.2);
+  border-radius: 50%;
 }
 
-.contact-info {
-  flex: 1;
-  padding: 0 1rem;
-  min-width: 200px;
+.header-info {
+  flex-grow: 1;
+  padding-left: 1rem;
 }
 
-.contact-info h1 {
+.header-info h1 {
   margin: 0;
   font-size: 1.8rem;
   color: #2c3e50;
 }
 
-.contact-info p {
+.header-info p {
   margin: 0.3rem 0;
-  font-size: 0.95rem;
 }
 
+/* Social Icons */
 .social-icons {
   display: flex;
   gap: 12px;
 }
 
 .social-icons svg {
-  width: 26px;
-  height: 26px;
-  fill: #444;
+  width: 24px;
+  height: 24px;
+  fill: #333;
   transition: transform 0.2s ease, fill 0.2s ease;
 }
 
@@ -77,54 +72,82 @@ html, body {
 .social-icons a[title="Twitter"]:hover svg { fill: #1DA1F2; }
 .social-icons a[title="TikTok"]:hover svg { fill: #ff0050; }
 
-/* Project sections */
+/* Section Layout */
 section {
   margin-bottom: 3rem;
 }
 
 section h2 {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.3rem;
   color: #2c3e50;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 0.5rem;
 }
 
+/* Grid for Projects */
 .project-grid {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
+  margin-top: 1rem;
 }
 
-.project-info {
-  padding-right: 0.5rem;
+.project-info p {
+  margin-bottom: 0.5rem;
 }
 
 .project-video iframe {
   width: 100%;
   height: 315px;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
+/* Slideshow Styles */
+.video-carousel {
+  position: relative;
+  margin-top: 1rem;
+}
+
+.reqSlides iframe {
+  width: 100%;
+  height: 315px;
+  border-radius: 8px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  background-color: #333;
+  color: white;
+  font-size: 20px;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  transform: translateY(-50%);
+}
+
+.prev { left: 0; }
+.next { right: 0; }
+
 /* Footer */
-.site-footer {
+.footer {
   text-align: center;
-  padding: 1.5rem 1rem;
-  background-color: #fff;
-  color: #555;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.9);
   border-top: 1px solid #ccc;
   font-size: 0.9rem;
 }
 
-/* Responsive layout */
-@media (max-width: 768px) {
-  .site-header {
+/* Responsive */
+@media (max-width: 600px) {
+  .header {
     flex-direction: column;
-    align-items: center;
     text-align: center;
   }
 
-  .contact-info {
-    padding: 1rem 0;
+  .header-info {
+    padding-left: 0;
   }
 
   .social-icons {
