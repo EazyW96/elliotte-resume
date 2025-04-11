@@ -1,3 +1,4 @@
+// Injecting all resume-related content into the #resume-content div
 document.getElementById("resume-content").innerHTML = `
   <section>
     <h2>Summary</h2>
@@ -55,6 +56,7 @@ document.getElementById("resume-content").innerHTML = `
 
   <section>
     <h2>Projects</h2>
+
     <h3>Georgia Symphony Orchestra Unified Website (Proof-of-Concept) — 2025</h3>
     <p style="color: red;">
       Designed and developed a proof-of-concept unified website for the Georgia Symphony Orchestra (GSO), streamlining navigation, branding, and user engagement.
@@ -107,3 +109,35 @@ document.getElementById("resume-content").innerHTML = `
     <p>Available upon request.</p>
   </section>
 `;
+
+// ========== Slideshow for Requirements Videos ==========
+
+// Starts at first slide
+let slideIndex = 0;
+
+// Function to update which video is showing
+function showSlide(n) {
+  const slides = document.getElementsByClassName("mySlides");
+  if (!slides.length) return;
+
+  // Hide all slides
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  // Loop around if out of bounds
+  if (n >= slides.length) slideIndex = 0;
+  if (n < 0) slideIndex = slides.length - 1;
+
+  // Show current slide
+  slides[slideIndex].style.display = "block";
+}
+
+// Called when clicking the arrows
+function plusSlides(n) {
+  slideIndex += n;
+  showSlide(slideIndex);
+}
+
+// Initialize slideshow on page load
+window.addEventListener("load", () => showSlide(slideIndex));
