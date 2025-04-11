@@ -55,6 +55,14 @@ document.getElementById("resume-content").innerHTML = `
 
   <section>
     <h2>Projects</h2>
+    <h3>Georgia Symphony Orchestra Unified Website (Proof-of-Concept) — 2025</h3>
+    <ul>
+      <li>Designed and developed a proof-of-concept unified website for the Georgia Symphony Orchestra (GSO), streamlining navigation, branding, and user engagement.</li>
+      <li>Integrated accessibility features, centralized event listings, and multimedia content to enhance inclusivity and audience reach.</li>
+      <li>Used WordPress for content management and implemented filterable calendars and campaign-specific landing pages to simulate advanced web functionality.</li>
+      <li>Demonstrated real-world impact by addressing branding and operational challenges, creating a scalable solution to improve user experience, foster community connections, and attract diversified funding opportunities.</li>
+    </ul>
+
     <h3>UBID Online Auction System — 2024</h3>
     <ul>
       <li>Developed UBID, an online auction system designed to transition traditional on-site auctions to an internet-based platform similar to eBay.</li>
@@ -94,3 +102,24 @@ document.getElementById("resume-content").innerHTML = `
     <p>Available upon request.</p>
   </section>
 `;
+
+// 🎞️ Slideshow functionality for Requirements Engineering videos
+let slideIndex = 1;
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  const slides = document.getElementsByClassName("reqSlides");
+  if (slides.length === 0) return;
+  if (n > slides.length) slideIndex = 1;
+  if (n < 1) slideIndex = slides.length;
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex - 1].style.display = "block";
+}
+
+// Initialize slideshow when page loads
+window.addEventListener('DOMContentLoaded', () => showSlides(slideIndex));
