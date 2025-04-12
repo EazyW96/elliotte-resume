@@ -60,6 +60,23 @@ html, body {
   gap: 0.8rem;
 }
 
+.resume-download {
+  display: flex;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+
+.resume-download a svg {
+  fill: #2c3e50;
+  transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.resume-download a:hover svg {
+  fill: #1abc9c; /* A distinct hover color */
+  transform: scale(1.2);
+}
+
+
 /* ICON DEFAULT COLORS */
 .header-right a[title="LinkedIn"] svg {
   fill: #0077B5;
