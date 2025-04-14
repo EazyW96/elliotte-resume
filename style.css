@@ -72,10 +72,9 @@ html, body {
 }
 
 .resume-download a:hover svg {
-  fill: #1abc9c; /* A distinct hover color */
+  fill: #1abc9c;
   transform: scale(1.2);
 }
-
 
 /* ICON DEFAULT COLORS */
 .header-right a[title="LinkedIn"] svg {
@@ -88,6 +87,10 @@ html, body {
 
 .header-right a[title="TikTok"] svg {
   fill: #010101;
+}
+
+.header-right a[title="GitHub"] svg {
+  fill: #333;
 }
 
 /* ICON HOVER COLORS */
@@ -106,6 +109,10 @@ html, body {
 
 .header-right a[title="TikTok"]:hover svg {
   fill: #ff0050;
+}
+
+.header-right a[title="GitHub"]:hover svg {
+  fill: #6e5494;
 }
 
 /* SECTION STYLING */
